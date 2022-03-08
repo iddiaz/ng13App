@@ -6,10 +6,12 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: HomeComponent,
     children: [
       {
         path: 'listado',
